@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+/*
+在 iOS 上，你通过 CoreGraphics 来在屏幕上绘制线条和形状。Flutter 有一套基于 Canvas 类的不同的 API，还有 CustomPaint 和 CustomPainter 这两个类来帮助你绘图。后者实现你在 canvas 上的绘图算法。
 
+想要学习如何实现一个笔迹画笔，请参考 Collin 在 StackOverflow 上的回答。*/
 class SignaturePainter extends CustomPainter {
   SignaturePainter(this.points);
 
