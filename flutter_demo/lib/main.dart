@@ -147,7 +147,9 @@ class RandomWordsState extends State<RandomWords> {
     // Router.push(context, Router.isolate, {});
     // Router.push(context, Router.taskProgress, {});
     // Router.push(context, Router.listView, {});
-    Router.push(context, Router.builderList, {});
+    // Router.push(context, Router.builderList, {});
+    // Router.push(context, Router.scrollviewPage, {});
+    Router.push(context, Router.gesturePage, {});
   }
 }
 

@@ -13,6 +13,8 @@ import 'package:flutter_demo/pages/draw.dart';
 import 'package:flutter_demo/pages/custom.dart';
 import 'package:flutter_demo/pages/isolate1.dart';
 import 'package:flutter_demo/pages/task_progress.dart';
+import 'package:flutter_demo/pages/scrollview.dart';
+import 'package:flutter_demo/pages/gesture.dart';
 
 class Router {
   static const detailPage = 'app://DetailPage';
@@ -28,6 +30,9 @@ class Router {
   static const taskProgress = 'app://taskProgress';
   static const listView = 'app://ListViewPage';
   static const builderList = 'app://ListBuilderPage';
+  static const scrollviewPage = 'app://ScrollviewPage';
+  static const gesturePage = 'app://GesturePage';
+
   Widget _getPage(String url, dynamic params) {
     switch (url) {
       case detailPage:
@@ -56,6 +61,10 @@ class Router {
         return ListViewPage();
       case builderList:
         return ListBuilderPage();
+      case scrollviewPage:
+        return ScrollviewPage();
+      case gesturePage:
+        return GesturePage2();
     }
     return null;
   }
