@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_demo/router.dart';
+import 'package:flutter_demo/pages/container_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primaryColor: Colors.red,
       ),
-      home: new RandomWords(),
+      home: new ContainerPage(),
     );
   }
 }
@@ -149,7 +150,8 @@ class RandomWordsState extends State<RandomWords> {
     // Router.push(context, Router.listView, {});
     // Router.push(context, Router.builderList, {});
     // Router.push(context, Router.scrollviewPage, {});
-    Router.push(context, Router.gesturePage, {});
+    // Router.push(context, Router.gesturePage, {});
+    Router.push(context, Router.myForm, {});
   }
 }
 
